@@ -1,0 +1,16 @@
+{
+  "name": "Translate Bubble",
+  "description": "Translate Bubble",
+  "version": "0.1",
+  "permissions": ["http://www.youtube-mp3.org/*",  "contextMenus", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "css": ["contentscript.css"],
+      "js": ["contentscript.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "manifest_version": 2
+}
